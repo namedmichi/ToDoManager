@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html {
+}
+body {
+  margin: 0;
+  padding: 0;
+  --side-nav-backcolor: #3a3a49;
+  --main-backcolor: #2e2e3d;
+  --grey-textcolor: #888fa1;
+  --selection-background: #645fc6;
+  overflow-x: hidden;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+}
+
+html,
+body {
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  background-color: var(--main-backcolor) !important;
+  transform: translate(-50%, -50%);
+}
+.mat-raised-button {
+  width: 90px;
+  height: 40px;
+  color: white;
+  background-color: #19191f;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+mat-dialog-actions {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.mat-mdc-dialog-container .mdc-dialog__title {
+  color: white !important;
+}
+.overlaycontainer input {
+  color: white;
+  background-color: #2e2e3d;
+  border: none;
+  width: 98%;
+  height: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  outline: solid rgb(77, 77, 77) 1px;
+}

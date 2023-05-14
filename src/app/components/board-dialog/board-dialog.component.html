@@ -1,0 +1,11 @@
+<div class="overlaycontainer">
+  <h2 mat-dialog-title>Erstelle ein neues Board</h2>
+  <mat-dialog-content [formGroup]="form">
+    <input matInput placeholder="Name" formControlName="name" />
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button class="mat-raised-button" (click)="close()">Schließen</button>
+    <button class="mat-raised-button" (click)="save()">Speichern</button>
+  </mat-dialog-actions>
+</div>

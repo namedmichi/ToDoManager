@@ -1,0 +1,24 @@
+<div class="overlaycontainer">
+  <h2 mat-dialog-title>{{ description }}</h2>
+  <mat-dialog-content [formGroup]="form">
+    <input matInput placeholder="Titel" formControlName="title" />
+    <input matInput placeholder="Beschreibung" formControlName="beschreibung" />
+    <input matInput placeholder="Unteraufgabe" formControlName="subtask" />
+
+    <div class="statusContainer">
+      <div
+        *ngFor="let item of activeSections"
+        class="statusCard"
+        (click)="setStatus(item)"
+        id="{{ item }}"
+      >
+        {{ item }}
+      </div>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button class="mat-raised-button" (click)="close()">Schließen</button>
+    <button class="mat-raised-button" (click)="save()">Speichern</button>
+  </mat-dialog-actions>
+</div>

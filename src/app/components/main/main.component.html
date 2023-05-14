@@ -1,1 +1,19 @@
-<p>main works!</p>
+<div class="mainBody">
+  <div *ngFor="let section of values.selectedBoard.sections" class="section">
+    <div>
+      <h2>{{ section }}</h2>
+      <div *ngFor="let item of values.selectedBoard.tasks">
+        <div
+          *ngIf="item.Status == section"
+          class="taskCard"
+          (click)="cardDialog(this.item)"
+        >
+          {{ item.Title }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="newColum">
+    <p class="newSection" (click)="openDialog()">+ Neue Section</p>
+  </div>
+</div>

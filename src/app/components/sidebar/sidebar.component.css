@@ -1,0 +1,30 @@
+h1 {
+  margin-left: 20px;
+}
+.sidebarBody {
+  display: flex;
+  flex-direction: column;
+}
+.boards {
+  color: var(--grey-textcolor);
+  padding-right: 20px;
+}
+.board {
+  padding: 5px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.selected {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: var(--selection-background);
+}
+
+.addBoard {
+  color: var(--grey-textcolor);
+  margin-top: 30px;
+  padding: 5px;
+  padding-left: 20px;
+  display: flex;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.flexWrapper {
+  display: flex;
+}
+.mainLeft {
+  display: flex;
+}
+.mainRight {
+  display: flex;
+  flex-direction: column;
+}
+app-sidebar {
+  background-color: var(--side-nav-backcolor);
+  min-height: 100dvh;
+  width: 15dvw;
+}
+app-nav {
+  background-color: var(--side-nav-backcolor);
+  width: 85dvw;
+  height: 80px;
+  outline: solid 2px rgba(187, 183, 183, 0.13);
+}
+app-main {
+  outline: solid 2px rgba(187, 183, 183, 0.13);
+  background-color: var(--main-backcolor);
+  height: 100%;
+}

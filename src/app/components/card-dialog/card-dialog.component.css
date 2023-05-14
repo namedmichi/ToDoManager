@@ -1,0 +1,22 @@
+.overlaycontainer {
+  padding: 20px;
+}
+.statusContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.statusCard {
+  width: 25%;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--side-nav-backcolor);
+}
+.subtask {
+  display: flex;
+  align-items: center;
+}
+span {
+  display: flex;
+  align-items: center;
+}
