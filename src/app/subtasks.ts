@@ -6,3 +6,12 @@ export interface Subtasks {
     
     
 }
+export function countSubtasks(subtasks: Subtask[]): number {
+
+        if (typeof subtasks[1] === 'string' || subtasks[1] instanceof String){
+
+                return 1 ;
+        }
+ 
+        return subtasks.length;
+}

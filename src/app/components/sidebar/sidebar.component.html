@@ -2,7 +2,7 @@
   <div class="logo">
     <h1>namedTask</h1>
   </div>
-  <div class="boards">
+  <div id="sideBar" class="boards">
     <div
       *ngFor="let item of $boards"
       (click)="selectBoard(item)"
@@ -43,4 +43,7 @@
     ></span>
     Neues Bord erstellen
   </div>
+  <!-- <div class="hideSidebar"> -->
+  <!-- <p (click)="hideSidebar()">Seitenleiste Verstecken</p> -->
+  <!-- </div> -->
 </div>

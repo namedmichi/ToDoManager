@@ -3,6 +3,7 @@ import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import { AddDialogeComponent } from '../add-dialoge/add-dialoge.component';
 import { createTask, Task } from 'src/app/task';
 import { values } from 'src/app/app.component';
+import { BoardSettingsDialogComponent } from '../board-settings-dialog/board-settings-dialog.component'; 
 
 @Component({
   selector: 'app-nav',
@@ -43,6 +44,35 @@ export class NavComponent {
       data => {
         values.selectedBoard.tasks.push(  createTask(data.title, data.beschreibung, data.subtask, data.status))
         console.log(values.selectedBoard.tasks)
+      }
+      )
+  }
+  openSettingsDialog() {
+    const config: MatDialogConfig = {
+      disableClose: false,
+      hasBackdrop: true,
+      backdropClass: '',
+      width: '650px',
+      height: '',
+      position: {
+          top: '50vh',
+          left: '50vw'
+      },
+      panelClass:'makeItMiddle',
+  };
+    config.data = {
+      description: 'Neuen Task Erstellen'
+    };
+
+
+
+    const dialogRef = this.dialog.open(BoardSettingsDialogComponent, config);
+
+
+    dialogRef.afterClosed().subscribe(
+      data => {
+        console.log(data)
+        values.selectedBoard.name = data.boardNameInput;
       }
       )
   }

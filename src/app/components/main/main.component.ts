@@ -5,7 +5,7 @@ import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import { SectionDialogComponent } from '../section-dialog/section-dialog.component';
 import { Task } from 'src/app/task';
 import { CardDialogComponent } from '../card-dialog/card-dialog.component';
-
+import { countSubtasks } from 'src/app/subtasks';
 
 @Component({
   selector: 'app-main',
@@ -15,6 +15,7 @@ import { CardDialogComponent } from '../card-dialog/card-dialog.component';
 export class MainComponent implements OnInit {
   $boards: Board[ ] = values.boards;
   values = values;
+  countSubtasks = countSubtasks;
   ngOnInit(): void {
   
   }

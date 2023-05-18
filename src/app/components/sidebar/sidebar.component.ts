@@ -68,4 +68,10 @@ ngAfterViewInit(): void {
      values.activeSections = board.sections;
      functions.changeBordSelection(board)
     }
+    hideSidebar(){
+
+      
+      document.getElementsByTagName('app-sidebar')[0].classList.add('hide')
+    
+    }
 }

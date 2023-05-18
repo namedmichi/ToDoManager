@@ -37,7 +37,11 @@ export class AddDialogeComponent implements OnInit {
       status: [this.status, []],
     })
   }
+  ngAfterViewInit(): void {
 
+    
+    this.setStatus("Offen")
+  }
  save(){
   this.dialogRef.close(this.form.value);
  }

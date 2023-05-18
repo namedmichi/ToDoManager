@@ -13,6 +13,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BoardDialogComponent } from './components/board-dialog/board-dialog.component';
 import { SectionDialogComponent } from './components/section-dialog/section-dialog.component';
 import { CardDialogComponent } from './components/card-dialog/card-dialog.component';
+import { CardSettingsDialogComponent } from './components/card-settings-dialog/card-settings-dialog.component';
+import { BoardSettingsDialogComponent } from './components/board-settings-dialog/board-settings-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,8 @@ import { CardDialogComponent } from './components/card-dialog/card-dialog.compon
     BoardDialogComponent,
     SectionDialogComponent,
     CardDialogComponent,
+    CardSettingsDialogComponent,
+    BoardSettingsDialogComponent,
   ],
   imports: [
     BrowserModule,

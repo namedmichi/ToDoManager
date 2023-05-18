@@ -5,6 +5,7 @@
 .statusContainer {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .statusCard {
   width: 25%;
@@ -15,4 +16,9 @@
 }
 .active {
   background-color: rgb(49, 49, 49);
+}
+textarea {
+  font-size: 20px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  resize: none;
 }

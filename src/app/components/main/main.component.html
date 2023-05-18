@@ -9,6 +9,10 @@
           (click)="cardDialog(this.item)"
         >
           {{ item.Title }}
+          <p class="subtaskCounter">
+            {{ item.SubtasksDone }} von
+            {{ countSubtasks(item.Subtasks) }} Subtasks erledigt
+          </p>
         </div>
       </div>
     </div>
